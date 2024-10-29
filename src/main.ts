@@ -3,7 +3,6 @@ import Fastify from 'fastify'
 const app = Fastify()
 
 app.get('/', (_req, reply) => {
-  console.log('hello')
   reply.send({ hello: 'world' })
 })
 

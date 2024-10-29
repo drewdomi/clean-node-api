@@ -10,5 +10,7 @@ pre-commit:
       run: pnpm format
     lint:
       run: pnpm lint
+    test:
+      run: pnpm test:steged
     git:
       run: git add -u .

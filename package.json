@@ -2,6 +2,7 @@
   "name": "clean-node-api",
   "version": "1.0.0",
   "main": "main.ts",
+  "type": "module",
   "keywords": ["node", "clean-node-api"],
   "author": "Andrew Domingues <contato@drewdomi.com>",
   "license": "ISC",
@@ -14,15 +15,22 @@
     "lint": "biome lint --write",
     "check": "biome check",
     "check:fix": "biome check --write",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:steged": "vitest run --bail=1",
+    "test:cov": "vitest run --coverage",
+    "test:cov:watch": "vitest --coverage",
     "prepare": "lefthook"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@types/node": "^22.8.2",
+    "@vitest/coverage-v8": "2.1.4",
     "esbuild": "0.24.0",
     "lefthook": "^1.8.1",
     "tsx": "^4.19.2",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4"
   },
   "dependencies": {
     "fastify": "^5.0.0"
