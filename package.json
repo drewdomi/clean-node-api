@@ -6,5 +6,9 @@
   "author": "Andrew Domingues <contato@drewdomi.com>",
   "license": "ISC",
   "description": "",
-  "scripts": {}
+  "scripts": {},
+  "devDependencies": {
+    "@types/node": "^22.8.2",
+    "typescript": "^5.6.3"
+  }
 }
